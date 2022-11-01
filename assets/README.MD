@@ -1,3 +1,5 @@
+# README.MD
+
 ```
 …or create a new repository on the command line
 echo "# tailwindcss-html-css" >> README.md
@@ -19,3 +21,5 @@ git push -u origin main
 …or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 ```
+## Snippets
+Coming from youtube tutorial https://www.youtube.com/watch?v=n5hxpGudmko
