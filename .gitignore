@@ -5,5 +5,5 @@
 temp/
 
 # ignore node_module
-node_module
+node_module/
 
