@@ -24,6 +24,6 @@ module.exports = {
 }
 
 // content: ["./*.{html}"],
-  // content: ["./*.html"],
-  // content: ["./*.{html}"],
-  // content: ["./**/*.{html,js}"],
+// content: ["./*.html"],
+// content: ["./*.{html}"],
+// content: ["./**/*.{html,js}"],
