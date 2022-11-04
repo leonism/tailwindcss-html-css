@@ -605,6 +605,10 @@ video {
   left: 0px;
 }
 
+.-left-full {
+  left: -100%;
+}
+
 .z-10 {
   z-index: 10;
 }
