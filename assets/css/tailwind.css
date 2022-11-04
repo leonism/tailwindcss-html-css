@@ -589,8 +589,28 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .mx-auto {
@@ -637,6 +657,10 @@ video {
   margin-right: 51px;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -655,10 +679,6 @@ video {
 
 .mt-12 {
   margin-top: 3rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
 }
 
 .mt-4 {
@@ -695,6 +715,10 @@ video {
 
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -781,6 +805,10 @@ video {
   width: 33px;
 }
 
+.max-w-\[250px\] {
+  max-width: 250px;
+}
+
 .max-w-\[730px\] {
   max-width: 730px;
 }
@@ -807,6 +835,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .rounded {
@@ -853,14 +885,18 @@ video {
   background-color: rgb(24 24 24 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#4452FE\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(68 82 254 / var(--tw-bg-opacity));
+.bg-black\/\[0\.7\] {
+  background-color: rgb(0 0 0 / 0.7);
 }
 
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#4452FE\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 82 254 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#343434\] {
@@ -871,6 +907,10 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-\[40px\] {
@@ -1022,6 +1062,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
@@ -1065,7 +1110,34 @@ video {
 }
 
 @media (min-width: 976px) {
+  .lg\:relative {
+    position: relative;
+  }
+
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:max-w-max {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+
+  .lg\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .lg\:p-0 {
+    padding: 0px;
+  }
+
+  .lg\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }

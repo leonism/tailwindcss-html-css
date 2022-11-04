@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/tailwind.css" />
+    <script src="/assets/js/script.js" defer></script>
     <title>My Website</title>
   </head>
-
   <body class="bg-[#181818] text-white subpixel-antialiased tracking-tight">
     <!-- Start Navigation Bar -->
     <nav id="NavBar" class="py-[30px]">
@@ -17,28 +17,32 @@
             <img src="/assets/images/logo.svg" alt="Back to Home" class="w-[206px] h-auto" />
           </a>
         </div>
+        <!-- Overlay of mobile navigation -->
+        <div class="fixed top-0 left-0 w-full h-full bg-black/[0.7] z-10 hidden"></div>
         <!-- Start the navigation links -->
-        <ul class="lg:flex flex-wrap hidden">
+        <ul data-nav-links class="hidden z-20 lg:relative fixed lg:flex flex-wrap left-0 top-0 h-full lg:max-w-max max-w-[250px] w-full lg:bg-transparent bg-white overflow-auto">
           <li class="mr-[51px] text-[16px] font-medium font-sans">
-            <a href="/" title="">Home</a>
-          </li>
+            <a href="/" title="" class="lg:text-white text-gray-900 lg:p-0 p-4 block text-[16px] font-medium font-sans">Home</a>
+            </l overflow-autoi>
           <li class="mr-[51px] text-[16px] font-medium font-sans">
-            <a href="/product" title="">Product</a>
-          </li>
+            <a href="/product" title="" class="lg:text-white text-gray-900 lg:p-0 p-4 block text-[16px] font-medium font-sans">Product</a>
+            </l overflow-autoi>
           <li class="mr-[51px] text-[16px] font-medium font-sans">
-            <a href="/about" title="">About</a>
-          </li>
+            <a href="/about" title="" class="lg:text-white text-gray-900 lg:p-0 p-4 block text-[16px] font-medium font-sans">About</a>
+            </l overflow-autoi>
           <li class="text-[16px] font-medium font-sans">
-            <a href="/contact" title="">Contact</a>
+            <a href="/contact" title="" class="lg:text-white text-gray-900 lg:p-0 p-4 block text-[16px] font-medium font-sans">Contact</a>
           </li>
         </ul>
-        <!-- Start the button -->
-        <button class="border border-white px-[46px] py-[13.5px] text-white hover:text-black hover:bg-white transition duration-100 font-medium">
-          Login
-        </button>
-        <!-- Expand the mobile navigation -->
-        <div>
-          <img src="/assets/images/icons/bars.svg" alt="Navigation">
+        <div id="wrapButtons" class="flex items-center">
+          <!-- Start the Login Button -->
+          <button class="border border-white px-[46px] py-[13.5px] text-white hover:text-black hover:bg-white transition duration-100 font-medium">
+            Login
+          </button>
+          <!-- Expand the mobile navigation -->
+          <button class="lg:hidden inline-block ml-3" onclick="toggleNavigation()">
+            <img src="/assets/images/icons/bars.svg" alt="Navigation">
+          </button>
         </div>
       </div>
     </nav>
